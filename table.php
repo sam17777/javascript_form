@@ -30,16 +30,20 @@
         const inputLastName =document.createElement("INPUT");
         inputLastName.type = "text";
         inputLastName.placeholder = "Enter Last Name";
+        
 
         const inputFirstName =document.createElement("INPUT");
         inputFirstName.type = "text";
         inputFirstName.placeholder = "Enter First Name";
 
         const row3 = studentRecord.insertRow();
-        const row3col1 = row3.insertCell().colSpan = "2";
+        const row3col1 = row3.insertCell();
+        row3col1.colSpan = 2;
+
+
         const submit =document.createElement("INPUT");
-        submit.type = "submit";
-        submit.placeholder = "SUBMIT";
+        inputSubmit.type = "submit";
+        inputSubmit.value = "SUBMIT";
     
 
 
